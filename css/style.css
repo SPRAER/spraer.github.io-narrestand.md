@@ -1,0 +1,177 @@
+* {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+header {
+	background: url(../img/delete.jpg) no-repeat center top / cover;
+	height: 100vh;
+}
+
+.heading {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-top: 41px;
+	width: 27px;
+	height: 27px;
+	margin-left: 50px;
+}
+
+.logo:hover {
+	margin-top: 38px;
+	width: 30px;
+	height: 30px;
+	margin-left: 47px;
+	cursor: pointer;
+	transition-delay: 0.1s;
+}
+
+nav {
+	margin-top: 50px;
+}
+
+.menu-all {
+	display: inline-flex;
+	flex-direction: row-reverse;
+}
+
+.topmenu {
+	margin-top: 41px;
+	margin-right: 50px;
+	height: 30px;
+	width: 40px;
+	cursor: pointer;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.menu li {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 41px;
+}
+
+.menu a {
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.menu-all:hover .menu {
+	display: block;
+	animation: menu 3s 1;
+}
+
+.menu a:hover {
+	color: #E91E63;
+}
+
+.titles_2 {
+	font-size: 35px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 6px;
+	animation: text 3s 1;
+}
+
+h1 {
+	font-size: 120px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 300px;
+	letter-spacing: 12px;
+	margin-bottom: 25px;
+	position: relative;
+	animation: text 3s 1;
+}
+
+
+@keyframes text {
+	0% {
+		opacity: 0;
+		color: #9E9E9E;
+	    -webkit-transform: translateY(-80px);
+	    transform: translateY(-80px);
+	}
+}
+
+
+@keyframes menu {
+	0% {
+		color: #3498db;
+		opacity: 0;
+	}
+
+	30% {
+		letter-spacing: 7px;
+	}
+
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex div{
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 300px 100px;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.9);
+	
+}
+
+.flex div:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,1);
+	background-color:rgba(0,0,0,.9);
+	padding: 300px 110px;	
+	transition-delay: 0.1s;
+}
+
+.video {
+	background:url(../img/1.jpg) no-repeat center top / cover;
+}
+
+.chat {
+	background:url(../img/2.png) no-repeat center top / cover;
+}
+
+.news {
+	background:url(../img/3.jpg) no-repeat center top / cover;
+}
+
+.grid2 div{
+	text-transform: uppercase;
+	background-color: #631772;
+	border: 1px solid #212941;
+	border-radius: 5px;
+	padding: 8px 15px;
+	font-size: 40px;
+	font-family: roboto;
+	text-align: center;
+}
+
+.grid2 {
+	display: grid;
+}
